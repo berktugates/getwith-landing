@@ -11,6 +11,7 @@ import {
 
 interface ICustomerCard {
   title: string;
+  updatedAt: string;
   description: string;
   customerName: string;
   uri: string;
@@ -18,6 +19,7 @@ interface ICustomerCard {
 
 export const CustomerCard: React.FC<ICustomerCard> = ({
   title,
+  updatedAt,
   description,
   customerName,
   uri,
@@ -25,21 +27,18 @@ export const CustomerCard: React.FC<ICustomerCard> = ({
   return (
     <Card className="mx-2 max-w-[240px] md:max-w-[400px] lg:max-w-[550px]">
       <CardHeader>
-        <CardTitle>Harika bir fikir!</CardTitle>
-        <CardDescription>edited 2w ago</CardDescription>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>{updatedAt}</CardDescription>
       </CardHeader>
       <CardContent>
-        <p>
-          Bu uygulamanın kesinlikle olması gerekiyordu çok beğendim umarım bir
-          an önce kullanmaya başlarız.
-        </p>
+        <p>{description}</p>
       </CardContent>
       <CardFooter className="flex gap-x-2">
         <Avatar className="size-6">
-          <AvatarImage src="https://github.com/shadcn.png" />
+          <AvatarImage src={uri} />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
-        <h1>Ece Ayvazoglu</h1>
+        <h1>{customerName}</h1>
       </CardFooter>
     </Card>
   );

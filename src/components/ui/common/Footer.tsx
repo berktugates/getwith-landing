@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "../button";
 import { Send } from "lucide-react";
 import { Icon } from "./Icon";
+import Link from "next/link";
 
 export const Footer: React.FC = () => {
   return (
@@ -31,9 +32,9 @@ export const Footer: React.FC = () => {
         <div id="quick-links">
           <h1 className="text-white text-lg mb-4">Quick Links</h1>
           <ul className="text-white text-sm flex flex-col">
-            <a href="/">Home</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
+            <Link href="/">Home</Link>
+            <Link href="">About</Link>
+            <Link href="">Contact</Link>
           </ul>
         </div>
         <div id="contact-us" className="text-white">
@@ -61,9 +62,9 @@ export const Footer: React.FC = () => {
       >
         <h1>© 2025 GetWith. All rights reserved.</h1>
         <ul className="flex items-center text-sm gap-x-1 mt-2 hover:cursor-pointer">
-          <a href="">Privacy Policy</a>
-          <a href="">Terms of Service</a>
-          <a href="">Cookie Settings</a>
+          <Link href="">Privacy Policy</Link>
+          <Link href="">Terms of Service</Link>
+          <Link href="">Cookie Settings</Link>
         </ul>
       </div>
     </footer>

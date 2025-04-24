@@ -10,16 +10,20 @@ export const MarqueeC: React.FC = () => {
       speed={50}
     >
       <CustomerCard
-        title="deneme"
-        description="lorem ipsum dolor sit amet"
-        uri="https://github.com/shadcn.png"
+        title="Harika bir fikir!"
+        updatedAt={new Date().toLocaleDateString('tr-TR')}
+        description="Bu uygulamanın kesinlikle olması gerekiyordu çok beğendim umarım bir
+          an önce kullanmaya başlarız."
         customerName="Ece Ayvazoglu"
+        uri="https://github.com/shadcn.png"
       />
-      <CustomerCard
-        title="deneme"
-        description="lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit amet"
-        uri="https://github.com/shadcn.png"
+       <CustomerCard
+        title="Harika bir fikir!"
+        updatedAt={new Date().toLocaleDateString('tr-TR')}
+        description="Bu uygulamanın kesinlikle olması gerekiyordu çok beğendim umarım bir
+          an önce kullanmaya başlarız."
         customerName="Ece Ayvazoglu"
+        uri="https://github.com/shadcn.png"
       />
     </Marquee>
   );

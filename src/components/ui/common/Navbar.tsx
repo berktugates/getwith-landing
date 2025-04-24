@@ -8,8 +8,8 @@ import {
   SelectItem,
   SelectLabel,
   SelectTrigger,
-  SelectValue,
 } from "@/components/ui/select";
+import Link from "next/link";
 
 export const Navbar: React.FC = () => {
   return (
@@ -27,37 +27,49 @@ export const Navbar: React.FC = () => {
               alt="logo"
               className="size-6 lg:size-8"
             />
-            <a
+            <Link
               href="/"
               className="text-gray-500 opacity-90 text-xs md:text-base hover:text-black"
             >
               Pricing
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
               className="text-gray-500 opacity-90 text-xs md:text-base hover:text-black"
             >
               Features
-            </a>
-            <a
+            </Link>
+            <Link
               href="mailto:contact@getwith.com"
               className="flex justify-center items-center gap-x-1 text-gray-500 opacity-90 text-xs md:text-base hover:text-black"
             >
               Contact <ExternalLink className="size-3" />
-            </a>
+            </Link>
           </div>
-          <div id="second-navbar-section" className="flex gap-x-2 items-center-">
+          <div
+            id="second-navbar-section"
+            className="flex gap-x-2 items-center-"
+          >
             <Select>
               <SelectTrigger className="w-[20px]">
-                <ChevronDown className="size-5" /> {/* seçili olan dilin kısaltması da olabilir. */}
+                <ChevronDown className="size-5" />{" "}
+                {/* seçili olan dilin kısaltması da olabilir. */}
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
                   <SelectLabel>Languages</SelectLabel>
-                  <SelectItem value="en" className="text-xs md:text-sm">EN</SelectItem>
-                  <SelectItem value="tr" className="text-xs md:text-sm">TR</SelectItem>
-                  <SelectItem value="de" className="text-xs md:text-sm">DE</SelectItem>
-                  <SelectItem value="fr" className="text-xs md:text-sm">FR</SelectItem>
+                  <SelectItem value="en" className="text-xs md:text-sm">
+                    EN
+                  </SelectItem>
+                  <SelectItem value="tr" className="text-xs md:text-sm">
+                    TR
+                  </SelectItem>
+                  <SelectItem value="de" className="text-xs md:text-sm">
+                    DE
+                  </SelectItem>
+                  <SelectItem value="fr" className="text-xs md:text-sm">
+                    FR
+                  </SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>

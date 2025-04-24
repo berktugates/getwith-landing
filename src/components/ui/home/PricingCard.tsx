@@ -14,7 +14,7 @@ interface IPricingCard {
   plan: string;
   price: string;
   period: string;
-  benefits: IPricing;
+  benefits: IPricing[];
   buttonText: string;
 }
 

@@ -1,5 +1,5 @@
 "use client"
-
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import * as React from "react"
 import * as SelectPrimitive from "@radix-ui/react-select"
 import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from "lucide-react"

@@ -2,7 +2,7 @@ import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import "../globals.css";
-import { SplashCursor } from "@/components/ui/splash-cursor";
+import FollowCursor from '@/components/ui/splash-cursor';
 
 export default async function LocaleLayout({
   children,
@@ -19,7 +19,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className='bg-black'>
-        <SplashCursor />
+        <FollowCursor />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
