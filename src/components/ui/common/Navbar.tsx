@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export const Navbar: React.FC = () => {
   return (
-    <div id="nav" className="sticky top-2 z-50 md:max-w-md mx-auto ">
+    <div id="nav" className="sticky top-2 z-50 md:max-w-md mx-auto" style={{cursor:"auto"}}>
       <nav className=" bg-stone-100/90 backdrop-blur-md backdrop-filter rounded-3xl shadow-md container-wrapper">
         <div className="flex h-14 px-4 md:px-4 justify-between items-center">
           <div
